@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-.header{
+.header {
     
     color: #373867;
     position: fixed;
@@ -15,17 +15,17 @@ body{
     width: 80%;
     height: 80px;
 }
-.header h1{
+.header h1 {
     float:left
 }
-#logoHeader{
+#logoHeader {
     height: 50px;
     right: 15px;
     position:absolute;
     
 }
 
-.asideMenu{
+.asideMenu {
     
     margin-top: -20px;
     width: 20%;
@@ -35,63 +35,89 @@ body{
     overflow: auto;
 }
 
-main{
+main {
     font-family: 'Roboto';
     width: 78%;
     margin-left: 22%;
 }
 
-#logoMenu{
+#logoMenu {
 
     position: absolute;
     right: 10px;
 }
-.asideMenu div{
+.asideMenu div {
     
     width: 100%;
     height: 8%;
 }
-.asideMenu div p{
+.asideMenu div p {
     float: left;
     padding-left: 20px;
     border-bottom: 2px #AACE9B solid;
     font-size: 30px;
    
 }
-.asideMenu ul{
+.asideMenu ul {
     list-style: none;
     margin-top: 50px;
 }
-.asideMenu ul li{
+.asideMenu ul li {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 700;
     
 }
-.asideMenu ul li a{
+.asideMenu ul li a {
     text-decoration: none;
     color: black;
     border-bottom: 2px #AACE9B solid;
    
 }
-
-.mainSection h2{
-    padding-top: 90px;
-}
-
-#contact{
+#contact {
     margin-top: 30px;
     font-weight: 600;
     padding-left: 20px;
     
 }
-.infoContact{
+.infoContact {
     width: 90%;
     margin-left: 15px;
     color: #9A9999;
     
 }
-.infoContact a{
+.infoContact a {
     text-decoration: none;
 }
+.mainSection h2 {
+    padding-top: 90px;
+    padding-bottom: 10px;
+    border-bottom: 2px #AACE9B solid;
+    font-size: 35px;
+}
 
+.mSubSection h3 {
+    font-size: 25px;
+}
+
+.mSubSection p {
+    width: 30%;
+    float: left;
+    padding-right: 150px;
+    color: #958888;
+}
+
+.mSubSection img {
+    width: 300px;
+    padding-bottom: 15px;
+}
+
+.funcSection h4 {
+    font-size: 25px;
+    padding-top: 45px;
+    border-top: 2px #AACE9B solid;
+}
+
+.funcBtns {
+    justify-content: space-between;
+}
