@@ -119,5 +119,25 @@ main {
 }
 
 .funcBtns {
-    justify-content: space-between;
+    width: 170px;
+    height: 35px;
+    color: #373867;
+    text-align: left;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.funcCont {
+    padding-left: 70px;
+    padding-bottom: 40px;
+}
+
+.firstBtn {
+    margin-right: 100px;
+}
+
+.funcBtns:active {
+    color: #AACE9B;
+    background-color: #afafaf;
 }
