@@ -2,10 +2,11 @@
 
 body{
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
-    font-family: 'Roboto', sans-serif;
+    
     color: #373867;
     position: fixed;
     background-color: #FFFFFF;
@@ -25,7 +26,7 @@ body{
 }
 
 .asideMenu{
-    s
+    
     margin-top: -20px;
     width: 20%;
     background-color: #DCDADA;
@@ -35,10 +36,62 @@ body{
 }
 
 main{
+    font-family: 'Roboto';
     width: 78%;
     margin-left: 22%;
+}
+
+#logoMenu{
+
+    position: absolute;
+    right: 10px;
+}
+.asideMenu div{
+    
+    width: 100%;
+    height: 8%;
+}
+.asideMenu div p{
+    float: left;
+    padding-left: 20px;
+    border-bottom: 2px #AACE9B solid;
+    font-size: 30px;
+   
+}
+.asideMenu ul{
+    list-style: none;
+    margin-top: 50px;
+}
+.asideMenu ul li{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.asideMenu ul li a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px #AACE9B solid;
+   
 }
 
 .mainSection h2{
     padding-top: 90px;
 }
+
+#contact{
+    margin-top: 30px;
+    font-weight: 600;
+    padding-left: 20px;
+    
+}
+.infoContact{
+    width: 90%;
+    margin-left: 15px;
+    color: #9A9999;
+    
+}
+.infoContact a{
+    text-decoration: none;
+}
+
