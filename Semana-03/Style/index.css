@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .correction{
@@ -18,18 +17,26 @@ body {
     width: 80%;
     height: 80px;
 }
+
 .header h1 {
     font-size: 35px;
-    margin-top: 50px;
+    margin-top: 35px;
     float:left;
     margin-left: 20px;
 }
+
 #logoHeader {
-    height: 50px;
+    height: 40px;
     right: 15px;
     top: 35px;
     position:absolute;
     
+}
+
+main {
+    font-family: 'Roboto';
+    width: 78%;
+    margin-left: 22%;
 }
 
 .asideMenu {
@@ -42,10 +49,13 @@ body {
     overflow: auto;
 }
 
-main {
-    font-family: 'Roboto';
-    width: 78%;
-    margin-left: 22%;
+.asideMenu input {
+    margin-top: 40px;
+    margin-left: 17%;
+    padding: 5px;
+    border: 2px #373867 solid;
+    border-radius: 5px;
+    color: #373867;
 }
 
 #logoMenu {
@@ -53,10 +63,17 @@ main {
     position: absolute;
     right: 10px;
 }
+
+.asideMenu img {
+ width: 20px;
+ padding-top: 15px;
+}
+
 .asideMenu div { 
     width: 100%;
     height: 9%;
 }
+
 .asideMenu div p {
     float: left;
     padding-left: 20px;
@@ -64,45 +81,101 @@ main {
     font-size: 30px;
     margin-top: 35px;
 }
+
 .asideMenu ul {
     list-style: none;
     margin-top: 50px;
     margin-left: 25px;
 }
+
 .asideMenu ul li {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 700;
-    
+    padding-bottom: 5px;
+    border-bottom: 2px #AACE9B solid;
 }
+
 .asideMenu ul li a {
     text-decoration: none;
     color: black;
-    border-bottom: 2px #AACE9B solid;
+    
    
 }
+
 #contact {
+    padding-bottom: 10px;
+    border-bottom: 3px #AACE9B solid;
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: 600;
     padding-left: 20px;
     
 }
+
 .infoContact {
     width: 90%;
     margin-left: 15px;
     color: #9A9999;
     margin-bottom: 35px;
+    font-weight: 500;
 }
+
 .infoContact a {
     text-decoration: none;
     
 }
+
+.mail {
+   
+   padding-bottom: 20px;
+   border-bottom: 2px #AACE9B solid;
+}
+
+.mail img{
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    bottom: 110px;
+    padding-right: 10px;
+
+}
+
+.mail a {
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-right: 15px;
+}
+
+.infoAdress {
+    padding-top: 15px;
+    border-bottom: 2px #AACE9B solid;
+    padding-bottom: 5px;
+
+}
+
+.infoAdress img {
+    position: absolute;
+    width: 25px;
+    bottom: 60px;
+}
+.infoAdress span {
+    margin-left: 45px;
+}
+.infoAdress a {
+    margin-left: 45px;
+    font-size: 13px;
+    color: black;
+
+}
+
 .mainSection h2 {
     padding-top: 90px;
     padding-bottom: 25px;
     border-bottom: 2px #AACE9B solid;
     font-size: 35px;
+    
 }
 
 .mSubSection h3 {
@@ -116,7 +189,7 @@ main {
     width: 30%;
     float: left;
     font-size: 18px;
-    padding-right: 150px;
+    padding-right: 30%;
     color: #958888;
 }
 
@@ -168,13 +241,14 @@ main {
     padding-bottom: 35px;
     
 }
-.firstArt{
+
+.firstArt {
     float:left;
     width: 50%;
     
 }
 
-.firstArt h5{
+.firstArt h5 {
     padding-bottom: 20px;
     font-size: 20px;
 }
@@ -184,7 +258,8 @@ main {
     width: 80%;
     color: #958888;
 }
-.formSection{
+
+.formSection {
     margin-bottom: 40px;
 }
 
@@ -194,7 +269,7 @@ main {
     font-weight: 600;
 }
 
-.name input{
+.name input {
    width: 200px;
    height: 25px;
    margin-bottom: 50px;
@@ -212,7 +287,8 @@ main {
     
     
 }
-.msg input{
+
+.msg input {
     width: 250px;
     height: 100px;
     border: 1px #373867 solid;
@@ -220,12 +296,14 @@ main {
     color: #373867;
     
 }
+
 .radio ul li p {
     font-weight: 600;
     padding-bottom: 15px;
     
     
 } 
+
 .radio ul li input {
     margin-left: 105px;
     
@@ -247,8 +325,96 @@ main {
     
 }
 
-.correction h3 {
-    font-size: 25px;
+.aboutUs {
     border-top: 2px #AACE9B solid;
-    padding-top: 40px;
+    padding-top: 30px;
+
+}
+
+.correction h3 {
+
+    font-size: 25px;
+    
+}
+
+.hist img {
+    border-radius: 5px;
+    width: 360px;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.hist p {
+    width: 30%;
+    height: 500px;
+    float:right;
+    margin-top: 40px;
+    margin-right: 22%;
+    color: #958888;
+}
+
+.hist2 img {
+    border-radius: 5px;
+    width: 400px;
+    position: absolute;
+    right: 13%;
+    float:right;
+    
+}
+
+.hist2 p {
+    width: 30%;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 10%;
+    color: #958888;
+    margin-right: 200px;
+}
+
+.footer  {
+    border-top: 2px #AACE9B solid;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#firstList {
+    margin-left: 9%;
+}
+
+.footerList {
+    float:left;
+    margin-right: 250px;
+    
+}
+
+.footer h5 {
+    font-weight: 700;
+    padding-bottom: 10px;
+    
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #958888;
+}
+
+.socialMedia {
+    border-top: 2px #AACE9B solid;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+#logoFooter {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#copyright {
+    text-align: center;
+    color: #958888;
+}
+
+#copyright h5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
