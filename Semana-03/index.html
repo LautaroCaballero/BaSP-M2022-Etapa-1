@@ -6,52 +6,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trackgenix</title>
         <link rel="shortcut icon" href="tether.svg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./Style/reset.css">
+        <link rel="stylesheet" href="./Style/index.css">
+        
+            
+        
     </head>
     <body>
         <!-- Comienzo del header -->
         <Header class="header">
+            
             <h1>
                 Trackgenix
             </h1> 
             <!-- Logo de la empresa-->
-            <img src="assets/LogoEmpresa.svg" alt="">
+            <img src="assets/LogoEmpresa.svg" alt="" id="logoHeader">
         </Header>
         
         <!-- Comienzo del sidebar -->
-        <aside>
+        <aside class="asideMenu">
             <input type="text" placeholder="Search">
+            <div>
+            <img src="assets/Menu.jpg" alt="" width="50px" id="logoMenu">
+            <p>Menu</p>
+            </div>
             <ul>
-                <img src="assets/Menu.jpg" alt="" width="50px">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">sign Up</a></li>
                 <li><a href="#">Log In</a></li>
                 <li><a href="#">Get in</a></li>
             </ul>
             <section>
-                <p>
-                    Información de contacto
+                <p id="contact">
+                    Contact information
                 </p>
-                <p>
+                <p class="infoContact">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure vitae sequi deserunt omnis.
                     Laborum fugiat, deleniti earum alias deserunt assumenda nihil praesentium ipsam ad. Illum a 
                     error mollitia veritatis!
                 </p>
             </section>
-            <section>
-                
-                <p>Trackgenix@radiumrocket.com</p>
+            <section class="infoContact">
+                <a href="#">Trackgenix@radiumrocket.com</a>
                 <p>1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
             </section>
         </aside>
         <!-- Cuerpo principal del sitio web -->
         <main>
+            <section class="mainSection"> 
             <h2>
                 Trackgenix SA
             </h2>
-            <section>
+            <section class="mSubSection">
                 <h3>
                     Trackgenix app
                 </h3>
@@ -59,83 +65,108 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure vitae sequi deserunt omnis.
                     Laborum fugiat, deleniti earum alias deserunt assumenda nihil praesentium ipsam ad. Illum a 
                     error mollitia veritatis!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quis corporis 
+                    voluptates? Dolor vitae sed architecto rem tempore illo. Mollitia beatae quam, magni eum 
+                    ipsa labore voluptatibus quidem accusantium odit.
+                    
                 </p>
+                <img src="./assets/watch.svg" alt="">
                 </section>
             <!-- Comienzo de las Functionalities -->
-            <section>
+            <section class="funcSection">
                 <h4>
                     Functionalities
                 </h4>
-                <input type="button" value="Hours log">
-                <input type="button" value="Resource management">
-                <input type="button" value="Reports">
-                <input type="button" value="Multiple roles">
+                <div class="funcCont">
+                    <input type="button" value="Hours log" class="funcBtns firstBtn" >
+                    <input type="button" value="Resource management" class="funcBtns">
+                </div>
+                <div class="funcCont">
+                    <input type="button" value="Reports" class="funcBtns firstBtn">
+                    <input type="button" value="Multiple roles" class="funcBtns">
+                </div>
             </section>
             <!-- Comienzo Why use section -->
-            <section>
+            <section class="whyUse">
                 <h4>
                     Why use Trackgenix?
                 </h4>
-                    <article>
-                        <h5>Productivity booster</h5>
-                        <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
-                        obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
-                        consectetur incidunt.
-                        </p>
-                    </article>
-                    <article>
-                        <h5>Leadership and team management</h5>
-                        <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
-                        obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
-                        consectetur incidunt.
-                        </p>
-                    </article>
-                    <article>
-                        <h5>Work traceability</h5>
-                        <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
-                        obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
-                        consectetur incidunt.
-                        </p>
-                    </article>
-                    <article>
-                        <h5>Decision making</h5>
-                        <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
-                        obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
-                        consectetur incidunt.
-                        </p>
-                    </article>
+                    <div class="firstSect">
+                        <article class="firstArt">
+                            <h5>Productivity booster</h5>
+                            <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
+                            obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
+                            consectetur incidunt.
+                            </p>
+                        </article>
+                        <article class="firstArt">
+                            <h5>Leadership and team management</h5>
+                            <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
+                            obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
+                            consectetur incidunt.
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <article class="firstArt">
+                            <h5>Work traceability</h5>
+                            <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
+                            obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
+                            consectetur incidunt.
+                            </p>
+                        </article>
+                        <article class="firstArt">
+                            <h5>Decision making</h5>
+                            <p> ipsum dolor, sit amet consectetur adipisicing elit. Aut minima dolor sunt soluta consectetur, reprehenderit 
+                            obcaecati harum natus optio reiciendis provident voluptates, consequatur impedit, animi hic! Facere culpa 
+                            consectetur incidunt.
+                            </p>
+                        </article>
+                    </div>
             </section>
+        </section>
         </main>
         <!-- Formulario de contacto -->
-        <section>
-            <h3>Form</h3>
+        <section class="correction formSection">
+            <h3 id="formTittle">Form</h3>
             <form action="">
-                <div>
+                <div class="name">
                     <input type="text" name="fullName" id="fullName" placeholder="Full Name">
                 </div>
-                <div>
+                <div class="name">
                     <input type="text" name="email" id="email" placeholder="email">
                 </div>
                 <!-- Form de message deberia tener un ancho y largo mayor  -->
-                <div>
+                <div class="msg">
                     <input type="text" name="message" id="message" placeholder="Message">
                 </div>
-                <div>
-                    <input type="radio" name="sMsg" id="hResources">
-                    <label for="hResources">Human Resources</label>
-                    <input type="radio" name="sMsg" id="systems">
-                    <label for="hResources">Systems</label>
-                    <input type="radio" name="sMsg" id="commercialization">
-                    <label for="Commercialization">Human Resources</label>
-                </div>
-                <div>
-                    <input type="submit" name="send">
-                    <input type="button" value="Return">
+                <div class="radio">
+                    <ul>
+                        <li>
+                            <p>Contact area:</p>
+                        </li>
+                        <li>
+                            <input type="radio" name="sMsg" id="hResources">
+                            <label for="hResources">Human Resources</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sMsg" id="systems">
+                            <label for="hResources">Systems</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="sMsg" id="commercialization">
+                            <label for="Commercialization">Human Resources</label>
+                        </li>
+                    </ul>
+                    <div class="radioSend">
+                        <input type="submit" name="send">
+                        <input type="button" value="Return">
+                    </div>
                 </div>
             </form>
         </section>
         <!-- Comienzo About us section -->
-        <section>
+        <section class="correction">
             <h3>History</h3>
                 <div>
                     <img src="assets/Content1.png" alt="">
@@ -153,7 +184,7 @@
                 </div>
         </section>
         <!-- Comienzo de footer -->
-        <footer>
+        <footer class="correction">
             <section>
                 <h5>Products</h5>
                 <ol>
