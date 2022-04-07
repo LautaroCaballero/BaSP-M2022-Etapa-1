@@ -1,0 +1,39 @@
+
+#logoMenu {
+    width: 40px;
+    margin-top: 5px;
+}
+.mainSection h2 {
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px #AACE9B solid;
+}
+#mainP{
+    display: flex;
+    flex-direction: row;
+}
+.mSubSection h3
+{
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.mSubSection p {
+    width: 60%;
+    /* border-bottom: 2px #AACE9B solid; */
+}
+.mSubSection img {
+    width: 40%;
+    /* border-bottom: 2px #AACE9B solid; */
+}
+.mSubSection {
+    border-bottom: 2px #AACE9B solid;
+    padding-bottom: 15px;
+}
+.funcSection {
+    margin-top: 15px;
+}
