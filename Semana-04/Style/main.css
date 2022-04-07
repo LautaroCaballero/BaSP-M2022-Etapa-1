@@ -7,6 +7,7 @@
     margin-left: 5%;
     margin-top: 40px;
     margin-bottom: 25px;
+    padding-bottom: 15px;
     font-size: 22px;
     font-weight: 600;
     border-bottom: 2px #AACE9B solid;
@@ -17,23 +18,48 @@
 }
 .mSubSection h3
 {
-    margin-left: 5%;
     margin-bottom: 20px;
     font-size: 28px;
     font-weight: 600;
 }
 .mSubSection p {
     width: 60%;
-    /* border-bottom: 2px #AACE9B solid; */
+    color: #958888;
 }
 .mSubSection img {
     width: 40%;
-    /* border-bottom: 2px #AACE9B solid; */
 }
 .mSubSection {
+    margin-left: 5%;
     border-bottom: 2px #AACE9B solid;
     padding-bottom: 15px;
 }
 .funcSection {
+    margin-left: 5%;
     margin-top: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+.funcSection h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.funcCont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+.funcCont input {
+    width: 160px;
+    height: 35px;
+    text-align: left;
+    justify-content: center;
+    color: #373867;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px #373867 solid;
+}
+.firstBtn {
+    margin-bottom: 5px;
 }
