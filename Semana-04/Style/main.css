@@ -23,11 +23,11 @@
     font-weight: 600;
 }
 .mSubSection p {
-    width: 60%;
+    width: 55%;
     color: #958888;
 }
 .mSubSection img {
-    width: 40%;
+    width: 45%;
 }
 .mSubSection {
     margin-left: 5%;
@@ -37,6 +37,8 @@
 .funcSection {
     margin-left: 5%;
     margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
     border-bottom: 2px #AACE9B solid;
 }
 .funcSection h4 {
@@ -62,4 +64,33 @@
 }
 .firstBtn {
     margin-bottom: 5px;
+}
+.whyUse {
+    margin-left: 5%;
+}
+.whyUse h4{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.whyUse h5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.whyUseM {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+.firstArt {
+    width: 180px;
+}
+.firstArt p {
+    color: #958888;
 }
