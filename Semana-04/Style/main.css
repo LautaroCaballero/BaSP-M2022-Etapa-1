@@ -159,6 +159,9 @@
 }
 .aboutUs {
     margin-left: 5%;
+    border-bottom: 2px #AACE9B solid;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 .aboutUs h3 {
     margin-bottom: 20px;
@@ -168,6 +171,29 @@
 .aboutUs img {
     width: 100px;
 }
+.aboutUs p {
+    width: 45%;
+    color: #958888;
+    align-self: flex-end;
+    font-size: 14px;
+}
+.aboutUs img {
+    width: 48%;
+    border-radius: 10px;
+}
 .hist {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.hist2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.footer {
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
 }
