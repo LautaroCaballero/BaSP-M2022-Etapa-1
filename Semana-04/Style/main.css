@@ -28,6 +28,7 @@
 }
 .mSubSection img {
     width: 45%;
+    max-height: 250px;
 }
 .mSubSection {
     margin-left: 5%;
@@ -40,6 +41,10 @@
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 2px #AACE9B solid;
+}
+.formInputs {
+    width: 80%;
+    margin: auto;
 }
 .funcSection h4 {
     font-size: 28px;
@@ -111,9 +116,14 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
+.firstInputs span {
+    width: 40%;
+}
+.msg {
+    width: 60%;
+}
 .name input {
-    width: 130px;
+    width: 90%;
     height: 25px;
     margin-bottom: 10px;
     border: 1px #373867 solid;
@@ -121,8 +131,9 @@
     color: #373867;
  }
  .msg input {
-    width: 200px;
+    width: 90%;
     height: 100px;
+    margin-left: 10%;
     border: 1px #373867 solid;
     border-radius: 5px;
     color: #373867;
@@ -133,6 +144,7 @@
     flex-wrap: wrap;
 }
 .radio ul {
+    width: 50%;
     margin-top: 20px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -141,21 +153,23 @@
     margin-bottom: 10px;
 }
 .radioSend {
-    width: 53%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 3%;
 }
 .radioSend input {
-    width: 80px;
+    width: 14vw;
     height: 35px;
     border-radius: 5px;
     border: 1px #373867 solid;  
     margin-bottom: 10px;
 }
-.radioSend:nth-child(1) {
-    margin-bottom: 15px;
+.radioSend [type="submit"] {
+    margin-right: 2px;
+    /* margin-bottom: -10px; */
 }
 .aboutUs {
     margin-left: 5%;
@@ -175,7 +189,7 @@
     width: 45%;
     color: #958888;
     align-self: flex-end;
-    font-size: 14px;
+    font-size: 3vw;
 }
 .aboutUs img {
     width: 48%;

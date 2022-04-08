@@ -9,9 +9,17 @@ main {
     display: flex;
     width: 90%;
 }
-
 @media screen and (max-width: 1024px){
     .asideMenu {
         display:none;
     }
 }
+@media screen and (min-width: 1024px){
+    #histP {
+        font-size: 2vw;
+    }
+    .radioSend [type="submit"] {
+        width: 11vw;
+    }
+}
+
