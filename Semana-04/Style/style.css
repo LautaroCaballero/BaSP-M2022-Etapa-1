@@ -10,7 +10,7 @@ main {
     width: 90%;
 }
 @media screen and (max-width: 1024px){
-    .asideMenu {
+    .aside-menu {
         display:none;
     }
 }
@@ -22,4 +22,14 @@ main {
         width: 11vw;
     }
 }
-
+@media screen and (min-width: 768px){
+    #logoMenu {
+        margin-right: 30px;
+    }
+    .services-list{
+        margin:auto;
+    }
+    .radio-send input { 
+        width: 130px;
+    }
+}
