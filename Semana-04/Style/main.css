@@ -163,6 +163,9 @@
 .firstBtn {
     margin-bottom: 20px;
 }
+.why-use {
+    border-bottom: 2px #AACE9B solid;
+}
 .why-use h4{
     margin-bottom: 20px;
     text-align: center;
@@ -182,7 +185,6 @@
     align-items: flex-end;
     padding-bottom: 15px;
     margin-bottom: 15px;
-    border-bottom: 2px #AACE9B solid;
 }
 .whyuse-article {
     width: 330px;
@@ -332,4 +334,76 @@
 }
 #copyright h5 {
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px){
+    .main-section h2 {
+        text-align: start;
+    }
+    .trackgenix-app {
+        width: 80%;
+        margin: auto;
+    }
+    .trackgenix-app h3 {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: start;
+    }
+    #trackgenix-p {
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    .trackgenix-app p {
+        width: 30%;
+    }
+    .trackgenix-app img {
+        width: 40%;
+        margin: 0;
+    }
+    .functionalities-section {
+        width: 80%;
+        margin: auto;
+    }
+    .functionalities-section h4 {
+        text-align: start;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .why-use {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .why-use h4 {
+        margin: 20px;
+        text-align: start;
+        font-size: 25px;
+    }
+    .whyuse-main {
+        width: 90%;
+        margin: auto;
+    }
+    .form-section {
+        width: 80%;
+        margin: auto
+    }
+    .about-us {
+        width: 80%;
+        margin: auto
+    }
+    .about-us h3 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 25px;
+        text-align: start;
+    }
+    .services {
+        width: 80%;
+        margin: auto
+    }
+    .social-media {
+        margin-top: 20px;
+    }
 }
