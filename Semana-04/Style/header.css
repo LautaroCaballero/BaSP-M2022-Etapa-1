@@ -6,6 +6,7 @@
     height: 80px;
     color: #373867;
     box-shadow: 0 2px 2px -2px gray;
+    background-color: #FFFFFF;
 }
 .header h1 {
     align-self: center;
@@ -16,4 +17,11 @@
 
 #logoHeader {
     padding-right: 2%;
+}
+
+@media screen and (min-width: 1024px){
+    .header {
+        position:fixed;
+        height: 60px;
+    }
 }
