@@ -1,0 +1,16 @@
+
+@media screen and (min-width: 480px){
+    .services-list{
+        width: 150px;
+        margin:auto;
+    }
+}
+@media screen and (min-width: 768px){
+    .services {
+        width: 90%;
+        margin: auto
+    }
+    .social-media {
+        margin-top: 20px;
+    }
+}

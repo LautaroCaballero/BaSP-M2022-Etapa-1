@@ -1,7 +1,7 @@
 #logoMenu {
     width: 30px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .main-section h2 {
     margin-top: 40px;
@@ -29,9 +29,9 @@
     color: #958888;
 }
 .trackgenix-app img {
+    width: 200px;
     margin: auto;
     margin-top: 15px;
-    width: 200px;
 }
 .trackgenix-app {
     padding-bottom: 15px;
@@ -48,10 +48,10 @@
     margin: auto;
 }
 .functionalities-section h4 {
+    margin-bottom: 20px;
     text-align: center;
     font-size: 35px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 .functionalities-buttons {
     display: flex;
@@ -242,6 +242,12 @@
 #copyright h5 {
     margin-bottom: 10px;
 }
+@media screen and (max-width: 480px){
+    #logo-menu{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+}
 
 @media screen and (min-width: 480px){
     #main-container {
@@ -292,9 +298,9 @@
         margin: auto;
     }
     .trackgenix-app h3 {
-        margin-top: 20px;
-        font-size: 25px;
+        margin-top: 20px;    
         text-align: start;
+        font-size: 25px;
     }
     #trackgenix-p {
         justify-content: space-between;
@@ -312,10 +318,10 @@
         margin: auto;
     }
     .functionalities-section h4 {
-        text-align: start;
-        font-size: 25px;
         margin-top: 20px;
         margin-bottom: 50px;
+        text-align: start;
+        font-size: 25px;
     }
     .functionalities-buttons input {
         width: 250px;

@@ -1,12 +1,12 @@
 .aside-menu {
+    width: 30%;
     padding-left: 20px;
     margin-top: 60px;
-    width: 30%;
     background-color: #DCDADA;
 }
 #search {
-    padding-top: 10px;
     width: 90%;
+    padding-top: 10px;
     margin: auto;
 }
 .aside-menu input {
@@ -23,7 +23,6 @@
     font-weight: 600;
 }
 .asideMenu ul {
-    
     list-style: none;
 }
 .aside-menu ul li {
@@ -48,9 +47,9 @@
     border-bottom: 1px #AACE9B solid;
 }
 .contact p {
+    width: 80%;
     margin: auto;
     margin-bottom: 20px;
-    width: 80%;
     color: #9A9999;
 }
 .mail {
@@ -79,13 +78,12 @@
 }
 .adress a {
     width: 80%;
-    font-size: 15px;
     flex-wrap: wrap;
+    font-size: 15px;
     font-weight: 300;
     text-decoration: none;
     color: #000000;
 }
-
 @media screen and (min-width: 768px){
     .aside-menu {
         padding-left: 0px;
