@@ -3,96 +3,6 @@
     margin-top: 5px;
     margin-left: 5px;
 }
-.aside-menu {
-    padding-left: 20px;
-    margin-top: 60px;
-    width: 25%;
-    background-color: #DCDADA;
-}
-#search {
-    padding-top: 10px;
-    width: 90%;
-    margin: auto;
-}
-.aside-menu input {
-    width: 150px;
-    height: 20px;
-    font-size: 13px;
-    font-weight: 700;
-    text-align: center;
-}
-.aside-menu h2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 33px;
-    font-weight: 600;
-}
-.asideMenu ul {
-    
-    list-style: none;
-}
-.aside-menu ul li {
-    padding-top: 5px;
-    padding-left: 10px;
-    margin-bottom: 30px;
-    padding-bottom: 5px;
-    font-size: 22px;
-    border-bottom: 1px #AACE9B solid;
-}
-.aside-menu ul li a{
-    padding-top: 50px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-.contact h5{
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 1px #AACE9B solid;
-}
-.contact p {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 80%;
-    color: #9A9999;
-}
-.mail {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 1px #AACE9B solid;
-}
-.mail a {
-    font-weight: 300;
-    text-decoration: none;
-    color: #000000;
-}
-.mail img {
-    width: 25px;
-}
-.adress {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5px;
-    border-bottom: 1px #AACE9B solid;
-}
-.adress img {
-    width: 25px;
-}
-.adress a {
-    width: 80%;
-    font-size: 15px;
-    flex-wrap: wrap;
-    font-weight: 300;
-    text-decoration: none;
-    color: #000000;
-}
-#test{
-    width: 100%;
-}
 .main-section h2 {
     margin-top: 40px;
     margin-bottom: 10px;
@@ -275,9 +185,6 @@
     font-weight: 600;
     text-align: center;
 }
-.about-us img {
-    width: 300px;
-}
 .about-us p {
     width: 300px;
     color: #958888;
@@ -336,7 +243,47 @@
     margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 480px){
+    #main-container {
+        margin: auto;
+    }
+    #logoMenu {
+        margin-right: 30px;
+    }
+    .trackgenix-app p {
+        margin: auto;
+    }
+    .functionalities-buttons input {
+        width: 220px;   
+    }
+    .whyuse-article {
+        width: 220px;
+    }
+    .text-inputs span {
+        width: 190px;
+    }
+    .msg {
+        width: 230px;
+    }
+    .radio ul {
+        width: 180px;
+    }
+    .radio-send input {
+        width: 110px;
+    }
+    .about-us p {
+        width: 205px;
+    }
+    .about-us img {
+        width: 250px;
+    }
+    .services-list{
+        margin:auto;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px){
     .main-section h2 {
         text-align: start;
     }
@@ -354,14 +301,14 @@
         padding-bottom: 30px;
     }
     .trackgenix-app p {
-        width: 30%;
+        width: 50%;
     }
     .trackgenix-app img {
-        width: 40%;
+        width: 50%;
         margin: 0;
     }
     .functionalities-section {
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     .functionalities-section h4 {
@@ -370,8 +317,11 @@
         margin-top: 20px;
         margin-bottom: 50px;
     }
+    .functionalities-buttons input {
+        width: 250px;
+    }
     .why-use {
-        width: 80%;
+        width: 90%;
         margin: auto;
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -385,12 +335,24 @@
         width: 90%;
         margin: auto;
     }
+    .whyuse-article {
+        width: 230px;
+    }
     .form-section {
-        width: 80%;
+        width: 90%;
         margin: auto
     }
+    .radio {
+        padding-left: 15%;
+    }
+    .text-inputs span {
+        width: 230px;
+    }
+    .msg {
+        width: 280px;
+    }
     .about-us {
-        width: 80%;
+        width: 90%;
         margin: auto
     }
     .about-us h3 {
@@ -399,8 +361,14 @@
         font-size: 25px;
         text-align: start;
     }
+    .about-us p {
+        width: 230px;
+    }
+    .about-us img {
+        width: 300px;
+    }
     .services {
-        width: 80%;
+        width: 90%;
         margin: auto
     }
     .social-media {

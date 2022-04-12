@@ -9,12 +9,16 @@ main {
     display: flex;
     width: 90%;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
     .aside-menu {
         display:none;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
+    #main-container{
+        width: 100%;
+        margin-left: 5%;
+    }
     .main-section {
         margin-top: 120px;
         margin-left: 20px;
@@ -32,14 +36,4 @@ main {
         text-align: start;
     }
 }
-@media screen and (min-width: 768px){
-    #logoMenu {
-        margin-right: 30px;
-    }
-    .services-list{
-        margin:auto;
-    }
-    .radio-send input { 
-        width: 130px;
-    }
-}
+
