@@ -25,11 +25,11 @@
     text-align: center;
 }
 .trackgenix-app p {
-    width: 340px;
+    width: 200px;
     color: #958888;
 }
 .trackgenix-app img {
-    width: 200px;
+    width: 180px;
     margin: auto;
     margin-top: 15px;
 }
@@ -60,12 +60,12 @@
     padding-bottom: 20px;
 }
 .functionalities-buttons input {
-    width: 300px;
+    width: 200px;
     height: 45px;
     text-align: left;
     justify-content: center;
     color: #373867;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
     border: 1px #373867 solid;
@@ -97,7 +97,7 @@
     margin-bottom: 15px;
 }
 .whyuse-article {
-    width: 330px;
+    width: 200px;
 }
 .whyuse-article p {
     color: #958888;
@@ -120,15 +120,15 @@
     flex-wrap: wrap;
 }
 .text-inputs span {
-    width: 300px;
+    width: 150px;
     margin: auto;
 }
 .msg {
-    width: 300px;
+    width: 200px;
     margin: auto;
 }
 .name input {
-    width: 90%;
+    width: 100%;
     height: 30px;
     margin-bottom: 10px;
     border: 1px #373867 solid;
@@ -148,7 +148,7 @@
     flex-wrap: wrap;
 }
 .radio ul {
-    width: 290px;
+    width: 180px;
     margin-top: 20px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -165,7 +165,7 @@
     margin-top: 3%;
 }
 .radio-send input {
-    width: 170px;
+    width: 100px;
     height: 30px;
     border-radius: 5px;
     border: 1px #373867 solid;  
@@ -186,12 +186,12 @@
     text-align: center;
 }
 .about-us p {
-    width: 300px;
+    width: 200px;
     color: #958888;
     font-size: 20px;
 }
 .about-us img {
-    width: 300px;
+    width: 200px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
@@ -208,40 +208,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.services {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 2px #AACE9B solid;
-}
-.services h5 {
-    font-size: 23px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.services-list{
-    width: 180px;
-}
-.services-list ol li a{
-    font-size: 18px;
-    text-decoration: none;
-    color: #958888;
-}
-.footer {
-    text-align: center;
-}
-.social-media {
-    margin-bottom: 15px;
-}
-#copyright {
-    color: #958888;
-}
-#copyright h5 {
-    margin-bottom: 10px;
-}
+
 @media screen and (max-width: 480px){
     #logo-menu{
         margin-top: 10px;
@@ -253,39 +220,8 @@
     #main-container {
         margin: auto;
     }
-    #logoMenu {
-        margin-right: 30px;
-    }
     .trackgenix-app p {
         margin: auto;
-    }
-    .functionalities-buttons input {
-        width: 220px;   
-    }
-    .whyuse-article {
-        width: 220px;
-    }
-    .text-inputs span {
-        width: 190px;
-    }
-    .msg {
-        width: 230px;
-    }
-    .radio ul {
-        width: 180px;
-    }
-    .radio-send input {
-        width: 110px;
-    }
-    .about-us p {
-        width: 205px;
-    }
-    .about-us img {
-        width: 250px;
-    }
-    .services-list{
-        margin:auto;
-        width: 150px;
     }
 }
 
@@ -294,98 +230,5 @@
         width: 100%;
         margin-left: 5%;
         margin-top: 50px;
-    }
-    .main-section {
-        margin-left: 20px;
-    }
-    .main-section h2 {
-        text-align: start;
-    }
-    .trackgenix-app {
-        width: 80%;
-        margin: auto;
-    }
-    .trackgenix-app h3 {
-        margin-top: 20px;    
-        text-align: start;
-        font-size: 25px;
-    }
-    #trackgenix-p {
-        justify-content: space-between;
-        padding-bottom: 30px;
-    }
-    .trackgenix-app p {
-        width: 50%;
-    }
-    .trackgenix-app img {
-        width: 50%;
-        margin: 0;
-    }
-    .functionalities-section {
-        width: 90%;
-        margin: auto;
-    }
-    .functionalities-section h4 {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        text-align: start;
-        font-size: 25px;
-    }
-    .functionalities-buttons input {
-        width: 250px;
-    }
-    .why-use {
-        width: 90%;
-        margin: auto;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
-    .why-use h4 {
-        margin: 20px;
-        text-align: start;
-        font-size: 25px;
-    }
-    .whyuse-main {
-        width: 90%;
-        margin: auto;
-    }
-    .whyuse-article {
-        width: 230px;
-    }
-    .form-section {
-        width: 90%;
-        margin: auto
-    }
-    .radio {
-        padding-left: 15%;
-    }
-    .text-inputs span {
-        width: 230px;
-    }
-    .msg {
-        width: 280px;
-    }
-    .about-us {
-        width: 90%;
-        margin: auto
-    }
-    .about-us h3 {
-        margin-top: 20px;
-        margin-bottom: 40px;
-        font-size: 25px;
-        text-align: start;
-    }
-    .about-us p {
-        width: 230px;
-    }
-    .about-us img {
-        width: 300px;
-    }
-    .services {
-        width: 90%;
-        margin: auto
-    }
-    .social-media {
-        margin-top: 20px;
     }
 }

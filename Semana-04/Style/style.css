@@ -9,11 +9,6 @@ main {
     display: flex;
     width: 90%;
 }
-@media screen and (max-width: 768px){
-    .aside-menu {
-        display:none;
-    }
-}
 @media screen and (min-width: 768px){
     #logo-menu{
         display: none;

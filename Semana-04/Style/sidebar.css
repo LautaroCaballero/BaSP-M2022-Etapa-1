@@ -1,13 +1,12 @@
 .aside-menu {
+    display: none;
     width: 30%;
     padding-left: 20px;
     margin-top: 60px;
     background-color: #DCDADA;
 }
 #search {
-    width: 90%;
-    padding-top: 10px;
-    margin: auto;
+width: 95%;
 }
 .aside-menu input {
     width: 150px;
@@ -86,6 +85,7 @@
 }
 @media screen and (min-width: 768px){
     .aside-menu {
+        display: block;
         margin-top: 50px;
         padding-left: 0px;
         margin-top: 80px;
