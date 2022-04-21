@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix - Log in</title>
+        <link rel="shortcut icon" href="/Semana-06/assets/Logo.png">
+        <link rel="stylesheet" href="/Semana-06/Style/reset.css">
+        <link rel="stylesheet" href="/Semana-06/Style/header.css">
+        <link rel="stylesheet" href="/Semana-06/Style/employee-signup.css">
+    </head>
+    <body>
+        <Header class="header">
+            <h1>
+                Trackgenix
+            </h1>
+            <img src="/Semana-06/assets/Logo.png" alt="" id="logoHeader">
+        </Header>
+        <main>
+            <section class="login-container">
+                <h2>Sign Up</h2>
+                <form id="login-form">
+                    <input type="text" id="first-name" name="mail" class="input-text"placeholder="First Name">
+                    <input type="text" id="last-name" name="mail" class="input-text"placeholder="Last Name">
+                    <input type="text" id="dni" name="mail" class="input-text"placeholder="DNI">
+                    <input type="text" id="birth-date" name="mail" class="input-text"placeholder="Birth Date">
+                    <input type="text" id="tel" name="mail" class="input-text"placeholder="Telephone">
+                    <input type="text" id="adress" name="mail" class="input-text"placeholder="Adress">
+                    <input type="text" id="city" name="mail" class="input-text"placeholder="City">
+                    <input type="text" id=postal-code" name="mail" class="input-text"placeholder="Postal Code">
+                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email">
+                    <input type="password" id="password" class="input-text" placeholder="Password">
+                    <input type="password" id="password-repeat" class="input-text" placeholder="Repeat password">
+                    <div id="lower">
+                        <input type="submit" id="buttonSubmit" class="submit-button" value="Login">
+                    </div>
+                </form>
+            </section>
+            <section class="error-submit" id="error-email">
+               <h2>Error: Wrong Email</h2>
+               <input type="button" value="Dismiss">
+            </section>
+            <section class="error-submit" id="error-pass">
+                <h2>Error: Wrong Password</h2>
+                <input type="button" value="Dismiss">
+             </section>
+        </main>
+        <script src="/Semana-06/javascript/login.js"></script> 
+    </body>
+</html>

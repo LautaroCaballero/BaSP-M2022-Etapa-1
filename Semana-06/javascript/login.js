@@ -6,11 +6,10 @@ const form = document.getElementById('login-form');
 const password = document.getElementById('password');
 
 
-submitBtn.addEventListener('click', e => {
+email.addEventListener('blur', e =>{
     e.preventDefault();
     var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     var regexPass = /^[a-zA-Z\s]{2,254}/; 
-
     if (regexEmail.test(email.value)) {
         console.log('la reonchca demtuamdare');
 
@@ -19,22 +18,18 @@ submitBtn.addEventListener('click', e => {
         }
         else {
             errorPass.style.display ="flex";
-            password.focus();
         }
     }
     else {
         errorEmail.style.display ="flex";
-        email.focus();
     }
-    
 })
-
-errorEmail.addEventListener('click', e => {
+email.addEventListener('focus', e => {
     e.preventDefault();
     errorEmail.style.display ="none";
 })
 
-errorPass.addEventListener('click', e => {
+password.addEventListener('focus', e => {
     e.preventDefault();
     errorPass.style.display ="none";
 })

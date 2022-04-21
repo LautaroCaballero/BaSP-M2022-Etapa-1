@@ -1,0 +1,89 @@
+Root{ --navyColor: #373867; 
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.login-container{
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #373867b2;
+}
+section.login-container h2 {
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #292a50;
+}
+section.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-text {
+    font-family: inherit;
+    width: 65%;
+    border: 0;
+    border: 1px solid #292a50;
+    outline: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    padding-left: 2px;
+    background: transparent;
+}
+.input-text::placeholder {
+    color: #373867;
+    font-size: 16px;
+}
+main section form div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.check {
+    color: #373867;
+}
+.submit-button{
+    width: 190px;
+    height: 30px; 
+    border-radius: 7px;
+    border: none;
+    background-color: #AACE9B;
+    color: #FFFFFF;
+}
+.error-submit{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 18px;
+}
+.error-submit input {
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+}
