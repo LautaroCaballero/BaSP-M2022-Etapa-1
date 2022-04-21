@@ -8,10 +8,11 @@ main {
     width: 100%;
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-main section{
+section.login-container{
     width: 300px;
     height: 400px;
     display: flex;
@@ -20,14 +21,14 @@ main section{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #373867b2;
 }
-main section h2 {
+section.login-container h2 {
     text-align: center;
     line-height: 140px;
     font-size: 25px;
     font-weight: 700;
     color: #292a50;
 }
-main section form {
+section.login-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,12 +46,16 @@ main section form {
 }
 .input-text::placeholder {
     color: #373867;
+    font-size: 16px;
 }
 main section form div {
     width: 65%;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
+}
+.check {
+    color: #373867;
 }
 .submit-button{
     width: 190px;
@@ -60,4 +65,23 @@ main section form div {
     border: none;
     background-color: #AACE9B;
     color: #FFFFFF;
+}
+.error-submit{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-size: 18px;
+}
+.error-submit input {
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
 }

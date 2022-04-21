@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="/Semana-06/Style/reset.css">
         <link rel="stylesheet" href="/Semana-06/Style/header.css">
         <link rel="stylesheet" href="/Semana-06/Style/log-in.css">
-        <link rel="stylesheet" href="">
     </head>
     <body>
         <Header class="header">
@@ -19,19 +18,28 @@
             <img src="/Semana-06/assets/Logo.png" alt="" id="logoHeader">
         </Header>
         <main>
-            <section>
+            <section class="login-container">
                 <h2>Log In</h2>
-                <form>
-                    <input type="name" class="input-text" placeholder="Email">
-                    <input type="password" class="input-text" placeholder="Password">
+                <form id="login-form">
+                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email">
+                    <input type="password" id="password" class="input-text" placeholder="Password">
                     <div id="lower">
                         <span>
-                            <input type="checkbox"><label class="check" for="checkbox">Remember me</label>
+                            <input type="checkbox"><label class="check" for="checkbox" class="remember-me">Remember me</label>
                         </span>
-                        <input type="submit" class="submit-button" value="Login">
+                        <input type="submit" id="buttonSubmit" class="submit-button" value="Login">
                     </div>
                 </form>
             </section>
-        </main> 
+            <section class="error-submit" id="error-email">
+               <h2>Error: Wrong Email</h2>
+               <input type="button" value="Dismiss">
+            </section>
+            <section class="error-submit" id="error-pass">
+                <h2>Error: Wrong Password</h2>
+                <input type="button" value="Dismiss">
+             </section>
+        </main>
+        <script src="/Semana-06/javascript/login.js"></script> 
     </body>
 </html>
