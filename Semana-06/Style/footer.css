@@ -1,0 +1,38 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+.services h5 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.services-list{
+    width: 100%;
+}
+.services-list ol li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #958888;
+}
+.footer {
+    text-align: center;
+}
+.social-media {
+    margin-bottom: 15px;
+}
+#copyright {
+    color: #958888;
+}
+#copyright h5 {
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 480px){
+    .services {
+        flex-direction: row;
+    }
+}

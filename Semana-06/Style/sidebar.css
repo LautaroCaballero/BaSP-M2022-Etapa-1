@@ -1,0 +1,93 @@
+.aside-menu {
+    display: none;
+    width: 30%;
+    padding-left: 20px;
+    margin-top: 60px;
+    background-color: #DCDADA;
+}
+#search {
+width: 95%;
+}
+.aside-menu input {
+    width: 150px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+.aside-menu h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.asideMenu ul {
+    list-style: none;
+}
+.aside-menu ul li {
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    border-bottom: 1px #AACE9B solid;
+}
+.aside-menu ul li a{
+    padding-top: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.contact h5{
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px #AACE9B solid;
+}
+.contact p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #9A9999;
+}
+.mail {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px #AACE9B solid;
+}
+.mail a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #000000;
+}
+.mail img {
+    width: 25px;
+}
+.adress {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+    border-bottom: 1px #AACE9B solid;
+}
+.adress img {
+    width: 25px;
+}
+.adress a {
+    width: 80%;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000000;
+}
+@media screen and (min-width: 768px){
+    .aside-menu {
+        display: block;
+        margin-top: 50px;
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+}
