@@ -11,10 +11,10 @@ email.addEventListener('blur', e =>{
     var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     var regexPass = /^[a-zA-Z\s]{2,254}/; 
     if (regexEmail.test(email.value)) {
-        console.log('la reonchca demtuamdare');
+        console.log('');
 
         if (regexPass.test(password.value)) {
-            console.log('la reonchca demtuamdare')
+            console.log('')
         }
         else {
             errorPass.style.display ="flex";
