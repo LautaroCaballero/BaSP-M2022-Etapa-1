@@ -6,7 +6,7 @@ body {
 }
 main {
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,9 +21,14 @@ section.login-container{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #373867b2;
 }
+section a img{
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
 section.login-container h2 {
     text-align: center;
-    line-height: 140px;
+    line-height: 115px;
     font-size: 25px;
     font-weight: 700;
     color: #292a50;
@@ -71,8 +76,10 @@ main section form div {
     height: 100px;
     display: flex;
     flex-direction: column;
+    position:fixed;
     display: none;
-    margin-top: 20px;
+    top: 60%;
+    margin-top: 150px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: center;
