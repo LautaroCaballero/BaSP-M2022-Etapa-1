@@ -17,22 +17,36 @@ var errorTel = document.getElementById('error-tel');
 var errorAdress = document.getElementById('error-adress');
 var errorCity = document.getElementById('error-city');
 var errorPostal = document.getElementById('error-postal');
-var errorPass = document.getElementById('error-pass')
+var errorPass = document.getElementById('error-pass');
+var errorContainer = document.getElementById('error-container');
+var input = document.getElementById('input-text');
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const space = " "
 
+var borderRed = (element) => {
+    element.style.border= '1px solid #ff0000'
+}
+
+var borderVio = (element) => {
+    element.style.border= '1px solid #292a50'
+}
 
 firstName.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong Name';
+    error.classList.add('error-submit');
     if(firstName.value.length <=3) {
-        errorFname.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(firstName);
     }
     else {
         for(i of firstName.value) {
             if(!letters.includes(i)) {
-                errorFname.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(firstName);
             }
     }
 }
@@ -40,161 +54,215 @@ firstName.addEventListener('blur', e => {
 
 firstName.addEventListener('focus', e => {
     e.preventDefault();
-    errorFname.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(firstName);
 })
 
 lastName.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong last name';
+    error.classList.add('error-submit');
     if(lastName.value.length <=3) {
-        errorLname.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(lastName);
     }
     else {
         for(i of lastName.value) {
             if(!letters.includes(i)) {
-                errorLname.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(lastName);
             }
     }
 }
 })
 lastName.addEventListener('focus', e => {
     e.preventDefault();
-    errorLname.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(lastName);
 })
 
 dni.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong DNI';
+    error.classList.add('error-submit');
     if(dni.value.length <=7) {
-        errorDni.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(dni);
     }
     else {
         for(i of dni.value) {
             if(!numbers.includes(i)) {
-                errorDni.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(dni);
             }
         }
     }
 })
 dni.addEventListener('focus', e => {
     e.preventDefault();
-    errorDni.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(dni);
 })
 
 tel.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong tel';
+    error.classList.add('error-submit');
     if(tel.value.length !=10) {
-        errorTel.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(tel);
     }
     else {
         for(i of tel.value) {
             if(!numbers.includes(i)) {
-                errorTel.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(tel);
             }
         }
     }
 })
 tel.addEventListener('focus', e => {
     e.preventDefault();
-    errorTel.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(tel);
 })
 
 adress.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong Adress';
+    error.classList.add('error-submit');
     if(adress.value.length <=4) {
-        errorAdress.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(adress);
     }
     else {
         for(i of adress.value) {
             if(!letterNumbers.includes(i) && !space.includes(i)) {
-                errorAdress.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(adress);
             }
         }
     }
 })
 adress.addEventListener('focus', e => {
     e.preventDefault();
-    errorAdress.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(adress);
 })
 
 city.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong City';
+    error.classList.add('error-submit');
     if(city.value.length <=4) {
-        errorCity.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(city);
     }
     else {
         for(i of city.value) {
             if(!letterNumbers.includes(i)&& !space.includes(i)) {
-                errorCity.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(city);
             }
         }
     }
 })
 city.addEventListener('focus', e => {
     e.preventDefault();
-    errorCity.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(city);
 })
 
 postalCode.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong Postal code';
+    error.classList.add('error-submit');
     if(postalCode.value.length <= 3 || postalCode.value.length >= 6) {
-        errorPostal.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(postalCode);
     }
     else {
         for(i of postalCode.value) {
             if(!numbers.includes(i)) {
-                errorPostal.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(postalCode);
             }
         }
     }
 })
 postalCode.addEventListener('focus', e => {
     e.preventDefault();
-    errorPostal.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(postalCode);
 })
 
 email.addEventListener('blur', e =>{
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong Email';
+    error.classList.add('error-submit');
     var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regexEmail.test(email.value)) {
-        errorEmail.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(email);
     }
 })
 email.addEventListener('focus', e => {
     e.preventDefault();
-    errorEmail.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(email);
 })
 
 password.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong password';
+    error.classList.add('error-submit');
     if(password.value.length <=8) {
-        errorPass.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(password);
     }
     else {
         for(i of password.value) {
             if(!letterNumbers.includes(i)) {
-                errorPass.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(password);
             }
         }
     }
 })
 password.addEventListener('focus', e => {
     e.preventDefault();
-    errorPass.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(password);
 })
 
 passwordRepeat.addEventListener('blur', e => {
     e.preventDefault();
+    var error = document.createElement('h2');
+    error.textContent = 'Wrong password';
+    error.classList.add('error-submit');
     if(passwordRepeat.value.length <=8) {
-        errorPass.style.display ="flex";
+        errorContainer.appendChild(error);
+        borderRed(passwordRepeat);
     }
     else {
         for(i of passwordRepeat.value) {
             if(!letterNumbers.includes(i)) {
-                errorPass.style.display ="flex";
+                errorContainer.appendChild(error);
+                borderRed(passwordRepeat);
             }
         }
     }
 })
 passwordRepeat.addEventListener('focus', e => {
     e.preventDefault();
-    errorPass.style.display ="none";
+    errorContainer.innerHTML = ""
+    borderVio(passwordRepeat);
 })

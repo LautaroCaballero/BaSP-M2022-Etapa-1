@@ -25,9 +25,14 @@ section.signup-container {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #373867b2;
 }
+section a img{
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
 section.signup-container h2 {
     text-align: center;
-    line-height: 75px;
+    line-height: 50px;
     font-size: 25px;
     font-weight: 700;
     color: #292a50;
@@ -50,6 +55,7 @@ section.signup-container h2 {
     border-radius: 6px;
     padding-left: 2px;
     background: transparent;
+    
 }
 .input-text::placeholder {
     color: #373867;
@@ -83,11 +89,7 @@ main section form div {
     width: 300px;
     height: 100px;
     display: flex;
-    flex-direction: column;
-    position:fixed;
-    display: none;
-    top: 60%;
-    margin-top: 150px;
+    margin-top: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: center;

@@ -75,11 +75,10 @@ main section form div {
     width: 300px;
     height: 100px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     position:fixed;
-    display: none;
-    top: 60%;
-    margin-top: 150px;
+    top: 60%; */
+    margin-top: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: center;
@@ -87,8 +86,8 @@ main section form div {
     background-color: red;
     font-size: 18px;
 }
-.error-submit input {
+/* .error-submit input {
     width: 180px;
     height: 30px;
     margin-top: 10px;
-}
+} */

@@ -19,68 +19,30 @@
         </Header>
         <main>
             <section class="signup-container">
+                <a href="../Views/index.html"><img src="../assets/backArrow.png" alt=""></a>
                 <h2>Sign Up</h2>
                 <form id="login-form">
                     <div>
-                    <input type="text" id="first-name" name="mail" class="input-text"placeholder="First Name">
-                    <input type="text" id="last-name" name="mail" class="input-text"placeholder="Last Name">
-                    <input type="text" id="dni" name="mail" class="input-text"placeholder="DNI">
-                    <input type="date" id="fecha1" class="input-text" name="date">
-                    <input type="text" id="tel" name="mail" class="input-text"placeholder="Telephone">
-                    <input type="text" id="adress" name="mail" class="input-text"placeholder="Adress">
+                    <input type="text" id="first-name" name="mail" class="input-text"placeholder="First Name" autocomplete="off">
+                    <input type="text" id="last-name" name="mail" class="input-text"placeholder="Last Name" autocomplete="off">
+                    <input type="text" id="dni" name="mail" class="input-text"placeholder="DNI" autocomplete="off">
+                    <input type="date" id="fecha1" class="input-text" name="date" autocomplete="off">
+                    <input type="text" id="tel" name="mail" class="input-text"placeholder="Telephone" autocomplete="off">
+                    <input type="text" id="adress" name="mail" class="input-text"placeholder="Adress" autocomplete="off">
                     </div>
                     <div>
-                    <input type="text" id="city" name="mail" class="input-text"placeholder="City">
-                    <input type="text" id="postal-code" name="mail" class="input-text"placeholder="Postal Code">
-                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email">
+                    <input type="text" id="city" name="mail" class="input-text"placeholder="City" autocomplete="off"> 
+                    <input type="text" id="postal-code" name="mail" class="input-text"placeholder="Postal Code" autocomplete="off">
+                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email" autocomplete="off">
                     <input type="password" id="password" class="input-text" placeholder="Password">
                     <input type="password" id="password-repeat" class="input-text" placeholder="Repeat password">
                     </div>
                 </form>
                 <div id="lower">
-                    <input type="submit" id="buttonSubmit" class="submit-button" value="Login">
+                    <input type="submit" id="buttonSubmit" class="submit-button" value="Create account">
                 </div>
             </section>
-            <section class="error-submit" id="error-email">
-               <h2>Error: Wrong Email</h2>
-               <input type="button" value="Dismiss">
-            </section>
-            <section class="error-submit" id="error-fname">
-                <h2>Error: Wrong first name</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-lname">
-                <h2>Error: Wrong last name</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-dni">
-                <h2>Error: Wrong DNI</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-tel">
-                <h2>Error: Wrong telephone</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-adress">
-                <h2>Error: Wrong adress</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-city">
-                <h2>Error: Wrong city</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-postal">
-                <h2>Error: Wrong postal code</h2>
-                <input type="button" value="Dismiss">
-             </section>
-             <section class="error-submit" id="error-email">
-                <h2>Error: Wrong email</h2>
-                <input type="button" value="Dismiss">
-             </section>
-            <section class="error-submit" id="error-pass">
-                <h2>Error: Wrong Password</h2>
-                <input type="button" value="Dismiss">
-            </section>
+            <div id="error-container" class=""></div>
         </main>
         <script src="../javascript/employee-signup.js"></script> 
     </body>
