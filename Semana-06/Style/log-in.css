@@ -75,9 +75,7 @@ main section form div {
     width: 300px;
     height: 100px;
     display: flex;
-    /* flex-direction: column;
-    position:fixed;
-    top: 60%; */
+
     margin-top: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -86,8 +84,28 @@ main section form div {
     background-color: red;
     font-size: 18px;
 }
-/* .error-submit input {
-    width: 180px;
+#modal {
+    display: none;
+    position: fixed;
+    width: 70%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #373867;
+}
+#modal a img{
+    position: absolute;
+    right: 15px;
     height: 30px;
-    margin-top: 10px;
-} */
+}
+#modal h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+#modal p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+}

@@ -21,12 +21,12 @@
             <section class="signup-container">
                 <a href="../Views/index.html"><img src="../assets/backArrow.png" alt=""></a>
                 <h2>Sign Up</h2>
-                <form id="login-form">
+                <form id="signup-form">
                     <div>
                     <input type="text" id="first-name" name="mail" class="input-text"placeholder="First Name" autocomplete="off">
                     <input type="text" id="last-name" name="mail" class="input-text"placeholder="Last Name" autocomplete="off">
                     <input type="text" id="dni" name="mail" class="input-text"placeholder="DNI" autocomplete="off">
-                    <input type="date" id="fecha1" class="input-text" name="date" autocomplete="off">
+                    <input type="date" id="birth-date" class="input-text" name="date" autocomplete="off">
                     <input type="text" id="tel" name="mail" class="input-text"placeholder="Telephone" autocomplete="off">
                     <input type="text" id="adress" name="mail" class="input-text"placeholder="Adress" autocomplete="off">
                     </div>
@@ -43,6 +43,23 @@
                 </div>
             </section>
             <div id="error-container" class=""></div>
+            <div id ="modal">
+                <a href=""><img src="../assets/xButton.png" alt="" id="modalX"></a>
+                <h2 id="modal-tittle"></h2>
+                <div>
+                    <p id="name-modal"></p>
+                    <p id="lastname-modal"></p>
+                    <p id="dni-modal"></p>
+                    <p id="birth-modal"></p>
+                    <p id="tel-modal"></p>
+                    <p id="adress-modal"></p>
+                    <p id="city-modal"></p>
+                    <p id="postal-modal"></p>
+                    <p id="email-modal"></p>
+                    <p id="password-modal"></p>
+                    <p id="passwordr-modal"></p>
+                </div>
+            </div>
         </main>
         <script src="../javascript/employee-signup.js"></script> 
     </body>
