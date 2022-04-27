@@ -23,12 +23,14 @@ console.log(result);
 // y retornar el valor NaN como resultado.
 
 console.log('-Exercise 6.b: ');
-if(!isNaN(firstNumber6A) && !isNaN(secondNumber6A)) {
-    addition6A(firstNumber6A,secondNumber6A);
-    console.log(result);
-}
-else {
-    alert("One of the parameters has an error: " + Number(firstNumber6A) + " " + Number(secondNumber6A));
+function validation6B (firstNumber6B, secondNumber6B) {
+    if (isNaN(firstNumber6B) || isNaN(secondNumber6B)) {
+        alert('One of the parameters has an error:')
+    }
+    else {
+        result = firstNumber6B + secondNumber6B;
+        return console.log('The result of the addition is: ' + result);
+    }
 }
 
 // Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si
@@ -45,39 +47,47 @@ console.log(validateInteger(firstNumber6A));
 // haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).
 
 console.log('-Exercise 6.d: ');
-if (!isNaN(firstNumber6A) && !isNaN(secondNumber6A)) {
-    if (firstNumber6A % 1 != 0) {
-        alert("The first rounded number is " + parseInt(firstNumber6A));
+function validation6D (firstNumber6D, secondNumber6D) {
+    if (isNaN(firstNumber6D) || isNaN(secondNumber6D)) {
+        alert('One of the parameters has an error:')
     }
-    else if (secondNumber6A % 1 != 0) { 
-        alert("The second rounded number is " + parseInt(secondNumber6A));
+    else if (validateInteger(firstNumber6D) !== true) {
+        alert('the first number will be rounded');
+        firstNumber6D = Math.round(firstNumber6D);       
+    }
+    else if (validateInteger(secondNumber6D) !== true) {
+        alert('the second number will be rounded');
+        secondNumber6D = Math.round(firstNumber6D);  
     }
     else {
-        addition6A(firstNumber6A,secondNumber6A);
-        console.log(result);
+        result = firstNumber6D + secondNumber6D;
+        return console.log('The result of the addition is: ' + result);
     }
-
-}
-else {
-    alert("One of the parameters has an error: " + Number(firstNumber6A) + " " + Number(secondNumber6A));
 }
 
 // Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma 
 // probando que todo siga funcionando igual.
 
 console.log('-Exercise 6.e: ');
-function validateDecimal(numberA, numberB) {
-    if (!isNaN(numberA) && !isNaN(numberB)) {
-        if (numberA % 1 != 0) {
-            alert("The first rounded number is " + parseInt(numberA));
-        }
-        else if (numberB % 1 != 0) { 
-            alert("The second rounded number is " + parseInt(numberB));
-        }
+function validation6E (firstNumber6D, secondNumber6E) {
+    if (isNaN(firstNumber6E) || isNaN(secondNumber6E)) {
+        alert('One of the parameters has an error:')
     }
-    else {
-        alert("One of the parameters has an error: " + Number(numberA) + " " + Number(numberB));
+    else if (validateInteger(firstNumber6E) !== true) {
+        alert('the first number will be rounded');
+        firstNumber6E = Math.round(firstNumber6E);       
+    }
+    else if (validateInteger(secondNumber6E) !== true) {
+        alert('the second number will be rounded');
+        secondNumber6E = Math.round(firstNumber6E);  
     }
 }
-addition6A(firstNumber6A,secondNumber6A);
-console.log(result); 
+
+function addition6E(firstNumber6E, secondNumber6E) {
+    validation6E(firstNumber6E, secondNumber6E);
+    result = firstNumber6E + secondNumber6E; 
+    return console.log(result);
+
+}
+
+addition6E(firstNumber6A, secondNumber6A);

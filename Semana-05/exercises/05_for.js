@@ -7,7 +7,7 @@ console.log('-Exercise 5.a: ');
 var array5A = ['dog', 'cat', 'lion', 'horse', 'monkey'];
 for (var i=0; i<5; i++)
 {
-    console.log('The', i+1 + ' element of the array is: ', array5A[i]);
+    alert(array5A[i]);
 }
 
 // Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada 
@@ -15,7 +15,7 @@ for (var i=0; i<5; i++)
 
 console.log('-Exercise 5.b: ');
 for (var i=0; i<5; i++) {
-    console.log(array5A[i].slice(0,1).toUpperCase());
+    console.log(array5A[i][0].toUpperCase() + array5A[i].substring(1).toLowerCase());
 }
 
 // Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con 

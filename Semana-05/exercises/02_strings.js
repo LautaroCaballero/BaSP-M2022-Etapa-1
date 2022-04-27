@@ -22,8 +22,8 @@ console.log('The first five characters of the string are:', secondString2B);
 
 console.log('-Exercise 2.c: ');
 var firstString2C = 'RadiumRocket'
-var secondString2C = firstString2B.substring(7,12);
-console.log('The last five characters of the string are:', secondString2C);
+var secondString2C = firstString2B.substring(9,12);
+console.log('The last three characters of the string are:', secondString2C);
 
 // Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string 
 // con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una 
