@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix - Log in</title>
+        <link rel="shortcut icon" href="../assets/Logo.png">
+        <link rel="stylesheet" href="../Style/reset.css">
+        <link rel="stylesheet" href="../Style/header.css">
+        <link rel="stylesheet" href="../Style/employee-signup.css">
+    </head>
+    <body>
+        <Header class="header">
+            <h1>
+                Trackgenix
+            </h1>
+            <img src="../assets/Logo.png" alt="" id="logoHeader">
+        </Header>
+        <main>
+            <section class="signup-container">
+                <a href="../Views/index.html"><img src="../assets/backArrow.png" alt=""></a>
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div>
+                    <input type="text" id="first-name" name="mail" class="input-text"placeholder="First Name" autocomplete="off">
+                    <input type="text" id="last-name" name="mail" class="input-text"placeholder="Last Name" autocomplete="off">
+                    <input type="text" id="dni" name="mail" class="input-text"placeholder="DNI" autocomplete="off">
+                    <input type="date" id="birth-date" class="input-text" name="date" autocomplete="off">
+                    <input type="text" id="tel" name="mail" class="input-text"placeholder="Telephone" autocomplete="off">
+                    <input type="text" id="adress" name="mail" class="input-text"placeholder="Adress" autocomplete="off">
+                    </div>
+                    <div>
+                    <input type="text" id="city" name="mail" class="input-text"placeholder="City" autocomplete="off"> 
+                    <input type="text" id="postal-code" name="mail" class="input-text"placeholder="Postal Code" autocomplete="off">
+                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email" autocomplete="off">
+                    <input type="password" id="password" class="input-text" placeholder="Password">
+                    <input type="password" id="password-repeat" class="input-text" placeholder="Repeat password">
+                    </div>
+                </form>
+                <div id="lower">
+                    <input type="submit" id="buttonSubmit" class="submit-button" value="Create account">
+                </div>
+            </section>
+            <div id="error-container" class=""></div>
+            <div id ="modal">
+                <a href=""><img src="../assets/xButton.png" alt="" id="modalX"></a>
+                <h2 id="modal-tittle"></h2>
+                <div>
+                    <p id="name-modal"></p>
+                    <p id="lastname-modal"></p>
+                    <p id="dni-modal"></p>
+                    <p id="birth-modal"></p>
+                    <p id="tel-modal"></p>
+                    <p id="adress-modal"></p>
+                    <p id="city-modal"></p>
+                    <p id="postal-modal"></p>
+                    <p id="email-modal"></p>
+                    <p id="password-modal"></p>
+                    <p id="passwordr-modal"></p>
+                </div>
+            </div>
+        </main>
+        <script src="../javascript/employee-signup.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,247 @@
+#logoMenu {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+section.main-section h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px #AACE9B solid;
+}
+#trackgenix-p{
+    display: flex;
+    flex-direction: column;
+}
+section.trackgenix-app h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+section.trackgenix-app p {
+    width:90%;
+    margin: auto;
+    font-size: 22px;
+    color: #958888;
+}
+section.trackgenix-app img {
+    width: 40%;
+    max-width: 410px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 15px;
+}
+section.trackgenix-app {
+    padding-bottom: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+section.functionalities-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+.form-inputs {
+    width: 80%;
+    margin: auto;
+}
+.functionalities-section h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.functionalities-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.functionalities-buttons input {
+    width: 80%;
+    height: 45px;
+    margin: 0 0px 5px 5px;
+    text-align: left;
+    justify-content: center;
+    color: #373867;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px #373867 solid;
+}
+.why-use {
+    border-bottom: 2px #AACE9B solid;
+}
+.why-use h4{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.why-use h5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.whyuse-main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.whyuse-article {
+    width: 90%;
+}
+.whyuse-article p {
+    color: #958888;
+}
+.form-section {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 5%;
+    border-bottom: 2px #AACE9B solid;
+}   
+.form-section h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.text-inputs {
+    display: flex;
+    flex-direction: column;
+}
+.text-inputs span {
+    width: 90%;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.msg {
+    width: 90%;
+    margin: auto;
+    margin-left: 10px;
+}
+.name input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px #373867 solid;
+    border-radius: 5px;
+    color: #373867;
+ }
+ .msg input {
+    width: 100%;
+    height: 100px;
+    border: 1px #373867 solid;
+    border-radius: 5px;
+    color: #373867;
+}
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+div.radio ul{
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+div.radio ul li:nth-child(1) {
+    margin-bottom: 10px;
+}
+.radio-send {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+.radio-send input {
+    width: 60%;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px #373867 solid;  
+    margin-bottom: 10px;
+}
+.radio-send [type="submit"] {
+    margin-right: 2px;
+}
+.about-us {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px #AACE9B solid;
+}
+.about-us h3 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.about-us p {
+    width: 100%;
+    color: #958888;
+    font-size: 20px;
+}
+.about-us img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.hist {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.hist2 {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 480px){
+    #main-container {
+        margin: auto;
+    }
+    #trackgenix-p{
+        flex-direction: row;
+    }
+    section.trackgenix-app p {
+        margin: auto;
+    }
+    .functionalities-buttons {
+        flex-direction: row;
+    }
+    .whyuse-main {
+        flex-direction: row;
+        font-size: 22px;
+    }
+    .text-inputs {
+        flex-direction: row;
+    }
+    .radio {
+        flex-direction: row;
+    }
+    .radio-send {
+        flex-direction: row;
+    }
+    .hist {
+        flex-direction: row;
+    }
+    .hist2 {
+        flex-direction: row-reverse;
+    }
+    .about-us img {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #main-container {
+        width: 100%;
+        margin-left: 5%;
+    }
+}

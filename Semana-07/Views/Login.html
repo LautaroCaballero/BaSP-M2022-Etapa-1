@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trackgenix - Log in</title>
+        <link rel="shortcut icon" href="../assets/Logo.png">
+        <link rel="stylesheet" href="../Style/reset.css">
+        <link rel="stylesheet" href="../Style/header.css">
+        <link rel="stylesheet" href="../Style/log-in.css">
+    </head>
+    <body>
+        <Header class="header">
+            <h1>
+                Trackgenix
+            </h1>
+            <img src="../assets/Logo.png" alt="" id="logoHeader">
+        </Header>
+        <main>
+            <section class="login-container">
+                <a href="../Views/index.html"><img src="../assets/backArrow.png" alt=""></a>
+                <h2>Log In</h2>
+                <form id="login-form">
+                    <input type="text" id="email" name="mail" class="input-text"placeholder="Email">
+                    <input type="password" id="password" class="input-text" placeholder="Password">
+                    <div id="lower">
+                        <span>
+                            <input type="checkbox"><label class="check" for="checkbox" class="remember-me">Remember me</label>
+                        </span>
+                        <input type="submit" id="buttonSubmit" class="submit-button" value="Login">
+                    </div>
+                </form>
+            </section>
+            <div id="error-container" class=""></div>
+            <div id ="modal">
+                <a href=""><img src="../assets/xButton.png" alt="" id="modalX"></a>
+                <h2 id="modal-tittle"></h2>
+                <div>
+                    <p id="email-modal"></p>
+                    <p id="password-modal"></p>
+                </div>
+            </div>
+        </main>
+        <script src="../javascript/login.js"></script> 
+    </body>
+</html>
