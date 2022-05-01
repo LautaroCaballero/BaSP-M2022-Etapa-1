@@ -16,6 +16,7 @@ var modalX = document.getElementById('modalX');
 var modalTittle = document.getElementById('modal-tittle');
 var modalEmail = document.getElementById('email-modal')
 var modalPassword = document.getElementById('password-modal');
+var logValidation = document.getElementById('log-validation')
 
 var borderRed = (element) => {
     element.style.borderBottom = '1px solid #ff0000'
@@ -39,7 +40,6 @@ email.addEventListener('blur', (e) =>{
 })
 email.addEventListener('focus', e => {
     e.preventDefault();
-    console.log("XD")
     errorContainer.innerHTML = ""
     borderVio(email);
     check[0] = true;
@@ -51,7 +51,7 @@ password.addEventListener('blur', e => {
     error.textContent = 'Wrong Password';
     error.classList.add('error-submit');
 
-    if(password.value.length <=8) {
+    if(password.value.length <=7) {
         errorContainer.appendChild(error);
         borderRed(password);
         check[1] = false;
@@ -84,18 +84,20 @@ submitBtn.addEventListener('click', e => {
     else {
         modal.style.display = 'block'
         if (check[0] == false){
-            modalTittle.textContent = 'Registration failed'
-            modalName.textContent = 'Wrong Email';
+            modalTittle.textContent = 'Login Failed: '
+            modalEmail.textContent = 'Wrong email: ' + email.value;
         }
         else if (check[1] == false){
-            modalTittle.textContent = 'Registration failed'
-            modalName.textContent = 'Wrong password';
+            modalTittle.textContent = 'Login Failed: '
+            modalEmail.textContent = 'Wrong password: ' + password.value;
         }
     else {
-        modalTittle.textContent = 'Login successful'
-        modalEmail.textContent = 'Valid email: ' + email.value
-        modalPassword.textContent = 'Valid password: ' + password.value
+        fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`)
+        .then(response => response.json())
+        .then(data => logValidation.textContent = data.msg)
+        modalTittle.textContent = 'Your information: '
+        modalEmail.textContent = 'Valid email: ' + email.value;
+        modalPassword.textContent = 'Valid password: ' + password.value;
     }
     }
 })
-
