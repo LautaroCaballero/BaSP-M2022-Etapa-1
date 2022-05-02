@@ -46,6 +46,30 @@ const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const space = " ";
 
+if (localStorage.getItem('name') != null &&
+localStorage.getItem('last name') != null &&
+localStorage.getItem('dni') != null &&
+localStorage.getItem('date') != null &&
+localStorage.getItem('tel') != null &&
+localStorage.getItem('address') != null &&
+localStorage.getItem('city') != null &&
+localStorage.getItem('zip') != null &&
+localStorage.getItem('email') != null &&
+localStorage.getItem('password') !=null &&
+localStorage.getItem('passwordR') !=null) {
+    firstName.value = localStorage.getItem('name');
+    lastName.value = localStorage.getItem('last name');
+    dni.value = localStorage.getItem('dni');
+    birth.value = localStorage.getItem('date');
+    tel.value = localStorage.getItem('tel');
+    adress.value = localStorage.getItem('address');
+    city.value = localStorage.getItem('city');
+    postalCode.value = localStorage.getItem('zip');
+    email.value = localStorage.getItem('email');
+    password.value = localStorage.getItem('password');
+    passwordRepeat.value = localStorage.getItem('passwordR');
+}
+
 var borderRed = (element) => {
     element.style.border= '1px solid #ff0000'
 }
@@ -65,8 +89,12 @@ var saveLocal = () => {
     localStorage.setItem("zip", postalCode.value);
     localStorage.setItem("email", email.value);
     localStorage.setItem("password", password.value);
+    localStorage.setItem("passwordR", passwordRepeat.value);
 }
 
+var showLocal = () => {
+
+}
 function dateFormat(inputDate, format) {
     const date = new Date(inputDate);
     const day = date.getDate();
