@@ -39,11 +39,12 @@ var modalPostal = document.getElementById('postal-modal');
 var modalEmail = document.getElementById('email-modal');
 var modalPassword = document.getElementById('password-modal');
 var modalPasswordR = document.getElementById('passwordr-modal');
+var logValidation = document.getElementById('log-validation')
 //arrays
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const space = " "
+const space = " ";
 
 var borderRed = (element) => {
     element.style.border= '1px solid #ff0000'
@@ -51,6 +52,34 @@ var borderRed = (element) => {
 
 var borderVio = (element) => {
     element.style.border= '1px solid #292a50'
+}
+
+var saveLocal = () => {
+    localStorage.setItem("name", firstName.value);
+    localStorage.setItem("last name", lastName.value);
+    localStorage.setItem("dni", dni.value);
+    localStorage.setItem("date", birth.value);
+    localStorage.setItem("tel", tel.value);
+    localStorage.setItem("address", adress.value);
+    localStorage.setItem("city", city.value);
+    localStorage.setItem("zip", postalCode.value);
+    localStorage.setItem("email", email.value);
+    localStorage.setItem("password", password.value);
+}
+
+function dateFormat(inputDate, format) {
+    const date = new Date(inputDate);
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();    
+    format = format.replace("MM", month.toString().padStart(2,"0"));        
+    if (format.indexOf("yyyy") > -1) {
+        format = format.replace("yyyy", year.toString());
+    } else if (format.indexOf("yy") > -1) {
+        format = format.replace("yy", year.toString().substr(2,2));
+    }
+    format = format.replace("dd", day.toString().padStart(2,"0"));
+    return format;
 }
 
 let calculateAge = (birthValue) => {
@@ -435,11 +464,21 @@ buttonSubmit.addEventListener('click', (e) => {
             modalPasswordR.textContent = 'Wrong password';
         }
         else {
+            var formattedDate = dateFormat(birth.value, 'MM/dd/yyyy');
+            fetch(`https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${firstName.value}&lastName=${lastName.value}&dni=${dni.value}&dob=${formattedDate}&phone=${tel.value}&address=${adress.value}&city=${city.value}&zip=${postalCode.value}&email=${email.value}&password=${password.value}`)
+            .then(response => 
+            {if(response.ok) {
+            return response.json()} 
+            else {throw new Error ('Error en la api')}})
+            .then(data => logValidation.textContent = data.msg)
+            .catch(error => {
+                console.error(error);
+            });
             modalTittle.textContent = 'Registration successful'
             modalName.textContent = 'Valid name: ' + firstName.value
             modalLname.textContent = 'Valid last name: ' + lastName.value
             modalDni.textContent = 'Valid dni: ' + dni.value
-            modalBirth.textContent = 'Valid birth date: ' + birth.value
+            modalBirth.textContent = 'Valid birth date: ' + formattedDate;
             modalTel.textContent = 'Valid tel: ' + tel.value
             modalAdress.textContent = 'Valid adress: ' + adress.value
             modalCity.textContent = 'Valid city: ' + city.value
@@ -447,7 +486,8 @@ buttonSubmit.addEventListener('click', (e) => {
             modalEmail.textContent = 'Valid email: ' + email.value
             modalPassword.textContent = 'Valid password: ' + password.value
             modalPasswordR.textContent = 'Valid password: ' + passwordRepeat.value
-}
+            }
+            saveLocal();
         }
     })
 

@@ -95,9 +95,17 @@ submitBtn.addEventListener('click', e => {
         fetch(`https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${password.value}`)
         .then(response => response.json())
         .then(data => logValidation.textContent = data.msg)
+        .catch(error => {
+            console.error(error);
+        })
         modalTittle.textContent = 'Your information: '
         modalEmail.textContent = 'Valid email: ' + email.value;
         modalPassword.textContent = 'Valid password: ' + password.value;
     }
     }
+})
+
+modalX.addEventListener('click', e => {
+    e.preventDefault();
+    modal.style.display = 'none';
 })
