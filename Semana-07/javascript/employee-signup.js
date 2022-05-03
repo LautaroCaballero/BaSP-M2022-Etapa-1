@@ -41,10 +41,54 @@ var modalPassword = document.getElementById('password-modal');
 var modalPasswordR = document.getElementById('passwordr-modal');
 var logValidation = document.getElementById('log-validation')
 //arrays
-const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const space = " ";
+var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+var letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var space = " ";
+
+var borderRed = (element) => {
+    element.style.border= '1px solid #ff0000'
+}
+
+var borderVio = (element) => {
+    element.style.border= '1px solid #292a50'
+}
+
+function dateFormat(inputDate, format) {
+    var date = new Date(inputDate);
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();    
+    format = format.replace("MM", month.toString().padStart(2,"0"));        
+    if (format.indexOf("yyyy") > -1) {
+        format = format.replace("yyyy", year.toString());
+    } else if (format.indexOf("yy") > -1) {
+        format = format.replace("yy", year.toString().substr(2,2));
+    }
+    format = format.replace("dd", day.toString().padStart(2,"0"));
+    return format;
+}
+
+var calculateAge = (birthValue) => {
+    var actualDate = new Date();
+    var actualYear = parseInt(actualDate.getFullYear());
+    var actualMonth = parseInt(actualDate.getMonth()) + 1;
+    var actualDay = parseInt(actualDate.getDate());
+    var birthYear = parseInt(String(birthValue).substring(0,4));
+    var birthMonth = parseInt(String(birthValue).substring(5,7));
+    var birthDay = parseInt(String(birthValue).substring(8,10));
+
+    var age = actualYear-birthYear;
+    if(actualMonth < birthMonth) {
+        age --;
+    }
+    else if (actualMonth === birthMonth) {
+        if (actualDay < birthDay) {
+            age --;
+        }
+    }
+    return age;
+}
 
 if (localStorage.getItem('name') != null &&
 localStorage.getItem('last name') != null &&
@@ -70,14 +114,6 @@ localStorage.getItem('passwordR') !=null) {
     passwordRepeat.value = localStorage.getItem('passwordR');
 }
 
-var borderRed = (element) => {
-    element.style.border= '1px solid #ff0000'
-}
-
-var borderVio = (element) => {
-    element.style.border= '1px solid #292a50'
-}
-
 var saveLocal = () => {
     localStorage.setItem("name", firstName.value);
     localStorage.setItem("last name", lastName.value);
@@ -90,45 +126,6 @@ var saveLocal = () => {
     localStorage.setItem("email", email.value);
     localStorage.setItem("password", password.value);
     localStorage.setItem("passwordR", passwordRepeat.value);
-}
-
-var showLocal = () => {
-
-}
-function dateFormat(inputDate, format) {
-    const date = new Date(inputDate);
-    const day = date.getDate();
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();    
-    format = format.replace("MM", month.toString().padStart(2,"0"));        
-    if (format.indexOf("yyyy") > -1) {
-        format = format.replace("yyyy", year.toString());
-    } else if (format.indexOf("yy") > -1) {
-        format = format.replace("yy", year.toString().substr(2,2));
-    }
-    format = format.replace("dd", day.toString().padStart(2,"0"));
-    return format;
-}
-
-let calculateAge = (birthValue) => {
-    const actualDate = new Date();
-    const actualYear = parseInt(actualDate.getFullYear());
-    const actualMonth = parseInt(actualDate.getMonth()) + 1;
-    const actualDay = parseInt(actualDate.getDate());
-    const birthYear = parseInt(String(birthValue).substring(0,4));
-    const birthMonth = parseInt(String(birthValue).substring(5,7));
-    const birthDay = parseInt(String(birthValue).substring(8,10));
-
-    let age = actualYear-birthYear;
-    if(actualMonth < birthMonth) {
-        age --;
-    }
-    else if (actualMonth === birthMonth) {
-        if (actualDay < birthDay) {
-            age --;
-        }
-    }
-    return age;
 }
 
 firstName.addEventListener('blur', e => {
@@ -179,6 +176,7 @@ lastName.addEventListener('blur', e => {
     }
 }
 })
+
 lastName.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -205,6 +203,7 @@ birth.addEventListener('blur', e => {
         }
     }   
 })
+
 birth.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -232,14 +231,13 @@ dni.addEventListener('blur', e => {
         }
     }
 })
+
 dni.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
     borderVio(dni);
     check[3] = true;
 })
-
-
 
 tel.addEventListener('blur', e => {
     e.preventDefault();
@@ -261,6 +259,7 @@ tel.addEventListener('blur', e => {
         }
     }
 })
+
 tel.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -288,6 +287,7 @@ adress.addEventListener('blur', e => {
         }
     }
 })
+
 adress.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -315,6 +315,7 @@ city.addEventListener('blur', e => {
         }
     }
 })
+
 city.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -342,6 +343,7 @@ postalCode.addEventListener('blur', e => {
         }
     }
 })
+
 postalCode.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -361,6 +363,7 @@ email.addEventListener('blur', e =>{
         check[8] = false;
     }
 })
+
 email.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -406,6 +409,11 @@ passwordRepeat.addEventListener('blur', e => {
         borderRed(passwordRepeat);
         check[10] = false;
     }
+    else if (passwordRepeat.value !== password.value) {
+        errorContainer.appendChild(error);
+        borderRed(passwordRepeat);
+        check[10] = false;
+    }
     else {
         for(i of passwordRepeat.value) {
             if(!letterNumbers.includes(i)) {
@@ -416,6 +424,7 @@ passwordRepeat.addEventListener('blur', e => {
         }
     }
 })
+
 passwordRepeat.addEventListener('focus', e => {
     e.preventDefault();
     errorContainer.innerHTML = ""
@@ -518,7 +527,7 @@ buttonSubmit.addEventListener('click', (e) => {
             saveLocal();
         }
     })
-
+    
     modalX.addEventListener('click', e => {
         e.preventDefault();
         modal.style.display = 'none';

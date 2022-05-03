@@ -2,13 +2,13 @@
 var errorContainer = document.getElementById('error-container');
 var errorEmail = document.getElementById('error-email');
 var errorPass = document.getElementById('error-pass')
-const submitBtn = document.getElementById('buttonSubmit');
+var submitBtn = document.getElementById('buttonSubmit');
 //elements
-const email = document.getElementById('email');
-const form = document.getElementById('login-form');
-const password = document.getElementById('password');
-const letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const errorDiv = document.createElement('div');
+var email = document.getElementById('email');
+var form = document.getElementById('login-form');
+var password = document.getElementById('password');
+var letterNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var errorDiv = document.createElement('div');
 //Modal
 var check = [true, true];
 var checkBox = document.getElementById('modal');
