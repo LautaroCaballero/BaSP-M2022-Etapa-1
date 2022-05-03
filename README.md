@@ -19,7 +19,9 @@ In addition, within week 05, different exercises were performed using javascript
 -A section with numbered elements that contains different functionalities of the site.
 -A footer with social networks and copyright
 
+
 ## Run this project.
+
 
 ```sh
 Click the "code" button
@@ -33,10 +35,35 @@ Open the index.html file
 ```
 ## Stages
 ```sh
-Second week: HTML.
-Third week: Basic CSS.
-Fourth week: Flexbox CSS.
-Fifth week: Js excercises.
+- Second week: Intro to html - Created a one page mockup with plain html.
+
+- Third week: Intro to css - The style was added to the web page using plain CSS.
+
+- Fourth week: Flexbox CSS - A responsive web design was created through the use of flexbox and media queries.
+
+- Fifth week: Intro to js - 6 solved exercises to help in learning js.
+
+- Sixth week: Landing page connected with login and registration. Via js added validations for both login and registration:
+
+Log in: 
+.Valid email using regular expressions.
+.Password with numbers, letters and more than eight characters
+
+Sign up: 
+.Name: Only letters and must have more than 3 letters.
+.Last name: Only letters and must have more than 3 letters.
+.DNI: Only number and must have more than 7 numbers.
+Date of birth: In dd/mm/yyyy format.
+.Phone: Number only and must have 10 numbers.
+.Address: Minimum 5 characters with letters, numbers and a space in between.
+.City: Alphanumeric text and must have more than 3 letters.
+.Postal Code: Only number and must have between 4 and 5 numbers.
+.Email: must be in a valid email format.
+.Password: Minimum 8 characters, made up of letters and numbers.
+.Repeat Password: At least 8 characters, made up of letters and numbers.
+
+Seventh week: Intro to JavaScript Async y Storage- 
+Validate through the use of fetch and an api that the entered data is correct, then save that data within a local storage 
 ```
 ```sh
 Made by: Lautaro Caballero
